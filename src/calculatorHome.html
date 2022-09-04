@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&family=Oswald:wght@500&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <title>JavaScript Calculator</title>
+</head>
+<body class=" flex justify-center items-center bg-green-200">
+    <div class="mt-32 p-12 max-w-sm mx-auto rounded-xl bg-teal-100 shadow-md hover:shadow-lg hover:scale-105 duration-500">
+        <form class=" text-center space-y-3">
+            <label>Input first number</label>
+            <input type="number" id="numOne" class=" border-black rounded-md mb-5"> <br>
+            <label>Input second number</label>
+            <input type="number" id="numTwo" class=" border-black rounded-md mb-5"> <br>
+            <button class=" bg-teal-600 border-black rounded-sm p-1" onclick="addition()">Add</button>
+            <button class=" bg-teal-600 border-black rounded-sm p-1" onclick="subtraction()">Subtract</button>
+            <button class=" bg-teal-600 border-black rounded-sm p-1" onclick="multiplication()">Multiply</button>
+            <button class=" bg-teal-600 border-black rounded-sm p-1" onclick="division()">Divide</button>
+        </form>
+        <div class=" text-center mt-3 w-12 mx-auto rounded-sm bg-teal-600" id="Sum">
+
+        </div>
+        <script src="./calculate.js"></script>
+    </div>
+    
+</body>
+</html>
